@@ -1,5 +1,5 @@
 function isPalindrome(word) {
-   if ((word.charAt(0) === word.length - 1) && (word.charAt(1) === word.length - 2)) {
+   if ((word.charAt(0) === word.length - 1) && (word.charAt(1) === word.length - 2) || (word.length === 1)) {
     return true;
    } else {
     return false;
