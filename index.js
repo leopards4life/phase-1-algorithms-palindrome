@@ -1,10 +1,18 @@
 function isPalindrome(word) {
-  // Write your algorithm here
-}
+   if ((word.charAt(0) === word.length - 1) && (word.charAt(1) === word.length - 2)) {
+    return true;
+   } else {
+    return false;
+   };
+};
 
 /* 
   Add your pseudocode here
-*/
+// Create if else statement = if matches, return true, if not return false
+// Check if word.length is divisible evenly
+// Check if first character matches last character
+// Check if second character matches second to last character
+// Check if third character matches third to last character
 
 /*
   Add written explanation of your solution here
