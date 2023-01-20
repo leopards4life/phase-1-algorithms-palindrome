@@ -1,18 +1,19 @@
 function isPalindrome(word) {
-   if ((word.charAt(0) === word.length - 1) && (word.charAt(1) === word.length - 2) || (word.length === 1)) {
+   let splitString = word.split("");
+   let splitReversedString = splitString.reverse();
+   let reversedWord = splitReversedString.join("");
+  if (reversedWord === word) {
     return true;
-   } else {
+  } else {
     return false;
-   };
+  };
 };
 
 /* 
   Add your pseudocode here
-// Create if else statement = if matches, return true, if not return false
-// Check if word.length is divisible evenly
-// Check if first character matches last character
-// Check if second character matches second to last character
-// Check if third character matches third to last character
+// Create a function that reverses a string
+// Assign reversed string to a variable
+// Check if reversed string matches word
 
 /*
   Add written explanation of your solution here
